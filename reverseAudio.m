@@ -1,5 +1,4 @@
-sound = audioread('soundFile');
-info = audioinfo('soundFile');
-%soundsc(sound,info.SampleRate)
+[sound, Fs] = audioread('soundFile');
+%soundsc(sound,Fs)
 rev = fliplr(sound');
-%soundsc(rev,info.SampleRate*1.25)
+%soundsc(rev,Fs*1.25)
