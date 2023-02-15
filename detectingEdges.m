@@ -25,3 +25,18 @@ aaa = abs(edges3) > thresh;
 contour(X, Y, aaa, [1,1])
 title("Detected edges")
 axis equal tight
+
+%------------------------ Better approach ---------------------------
+
+%img = imread('moon.tif');
+%[px, py] = gradient(double(img));
+%[X, Y] = meshgrid(1:1:358, -(1:1:537));
+%contour(X,Y,double(img))
+%hold on
+%quiver(X,Y,px,py)
+%div = divergence(X,Y,px,py);
+%surf(X,Y,div)
+%mag = sqrt(px.^2 + py.^2);
+%figure
+%contour(X, Y, abs(mag)>50, [1,1])
+%axis equal tight
