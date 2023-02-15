@@ -40,3 +40,5 @@ axis equal tight
 %figure
 %contour(X, Y, abs(mag)>50, [1,1])
 %axis equal tight
+
+%Another approach can be Laplacian of Gaussian Filter.
